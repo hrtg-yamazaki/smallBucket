@@ -19,21 +19,20 @@ class Status(models.Model):
     good_day = models.IntegerField(verbose_name="幸福感", default=0)
     daily_login = models.IntegerField(verbose_name="ログイン日数", default=0)
 
-    # メソッドにするとソートが厳しくなる・・・mybucketの方も同様に。
-    # basic_total = models.IntegerField(verbose_name="基礎点", default=0)
+    basic_total = models.IntegerField(verbose_name="基礎点", default=0)
 
 
 
-class MyBucket(models.Model):
+# class MyBucket(models.Model):
 
-    # ステータスと同じようにユーザーと一対一のリレーション組む感じで平気か？
-    # user = models.OneToOneField(User, verbose_name="ユーザー", on_delete=models.CASCADE)
+#     # ステータスと同じようにユーザーと一対一のリレーション組む感じで平気か？
+#     # user = models.OneToOneField(User, verbose_name="ユーザー", on_delete=models.CASCADE)
 
-    name1 = models.CharField(verbose_name="マイバケット１", max_length=255, null=True)
-    score1 = models.IntegerField(verbose_name="１の点数", default=0)
-    name2 = models.CharField(verbose_name="マイバケット２", max_length=255, null=True)
-    score2 = models.IntegerField(verbose_name="２の点数", default=0)
-    name3 = models.CharField(verbose_name="マイバケット３", max_length=255, null=True)
-    score3 = models.IntegerField(verbose_name="３の点数", default=0)
+#     name1 = models.CharField(verbose_name="マイバケット１", max_length=255, null=True)
+#     score1 = models.IntegerField(verbose_name="１の点数", default=0)
+#     name2 = models.CharField(verbose_name="マイバケット２", max_length=255, null=True)
+#     score2 = models.IntegerField(verbose_name="２の点数", default=0)
+#     name3 = models.CharField(verbose_name="マイバケット３", max_length=255, null=True)
+#     score3 = models.IntegerField(verbose_name="３の点数", default=0)
 
-    # 
+#     

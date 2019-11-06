@@ -1,23 +1,27 @@
 <!doctype html>
 {% load static %}
+{% load sass_tags %}
 <html lang="ja">
     <head>
 
-        <title>small bucket</title>
+        <title>SmallBucket</title>
         <meta charset="utf-8">
         <meta http-equiv="Content-Type">
         <meta name="Viewport" content="width=device-width, inicial-scall=1">
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% sass_src 'smallbucket/scss/reset.scss' %}">
+        <link rel="stylesheet" href="{% sass_src 'smallbucket/scss/style.scss' %}">
+
         {% block extra_css %}{% endblock %}
-        
+
     </head>
 
     <body>
-
-        {% include "layout/application.html "%}
-
-        {% block content %}
-        {% endblock %}
+        
+            {% include "./layout/header.html"%}
+        <div class="container">
+            {% block content %}
+            {% endblock %}
+        </div>
 
         {% comment %} <script src="{% static js/smallbucket.js %}"></script> {% endcomment %}
 

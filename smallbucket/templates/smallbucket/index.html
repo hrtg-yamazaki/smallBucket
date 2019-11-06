@@ -1,1 +1,44 @@
-<h1>Hello World!</h1>
+{% extends "base.html" %}
+
+{% block content%}
+
+<div class="wrapper">
+
+  <div class="wrapper__top">
+    <div class="wrapper__top__box">
+      <div class="wrapper__top__box__message">
+        <h1><span>SmallBucket!</span></h1>
+        <p>Record your small step!</p>
+        <a href=""><span>さっそく始める<span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper__bottom">
+    <div class="wrapper__bottom__box">
+      
+      <div class="wrapper__bottom__box__top">
+        <div class="wrapper__bottom__box__top__text">
+          <p>”小さなことを積み重ねることが、<br>&ensp;とんでもない所へ行くためのただ１つの道...”</p>
+        </div>
+        <div class="wrapper__bottom__box__top__image">
+        </div>
+      </div>
+
+      <div class="wrapper__bottom__box__under">
+        <div class="wrapper__bottom__box__under__image">
+        </div>
+        <div class="wrapper__bottom__box__under__text">
+          <p>”学べば学ぶほど無知に気づく、気づけば気づくほど学びたくなる...”</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+{% endblock %}
